@@ -1,13 +1,15 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Courses from "./pages/Courses";
-import Students from "./pages/Students";
-import Analytics from "./pages/Analytics";
-import NotFound from "./pages/NotFound";
+
+const Courses = lazy(() => import("./pages/Courses"));
+const Students = lazy(() => import("./pages/Students"));
+const Analytics = lazy(() => import("./pages/Analytics"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
@@ -19,11 +21,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/courses" element={<Courses />} />
-          <Route path="/students" element={<Students />} />
-          <Route path="/analytics" element={<Analytics />} />
+          <Route path="/courses" element={<Suspense fallback={null}><Courses /></Suspense>} />
+          <Route path="/students" element={<Suspense fallback={null}><Students /></Suspense>} />
+          <Route path="/analytics" element={<Suspense fallback={null}><Analytics /></Suspense>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Suspense fallback={null}><NotFound /></Suspense>} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
