@@ -1,10 +1,12 @@
 # Dashboard Hub - Advanced Dashboard Management Platform
 
-A modern and powerful dashboard management platform built with the latest web technologies.
+A modern and powerful dashboard management platform built with the latest web technologies by We3DS.
 
-## Project Overview
+## Overview
 
-Dashboard Hub provides a comprehensive solution for creating, managing, and monitoring dashboards with real-time data visualization, analytics, and reporting capabilities.
+Dashboard Hub provides a comprehensive solution for creating, managing, and monitoring dashboards with real-time data visualization, analytics, and reporting capabilities. Developed by We3DS, a leading digital solutions company.
+
+**Company Website:** [https://we3ds.com/](https://we3ds.com/)
 
 ## Quick Start
 
@@ -61,20 +63,74 @@ Dashboard-hub/
 │   ├── App.tsx           # Main component
 │   └── main.tsx          # Entry point
 ├── public/               # Static files
+├── docs/                 # Documentation
 ├── index.html            # HTML template
 ├── vite.config.ts        # Vite configuration
 ├── tailwind.config.ts    # Tailwind CSS configuration
 └── package.json          # Dependencies and scripts
 ```
 
-## Features
+## Key Features
 
-- Real-time dashboard creation and management
-- Advanced data visualization with charts and graphs
-- Responsive design for all devices
-- Dark and light theme support
-- User-friendly interface
-- Performance optimized
+### Dashboard Management
+- Create and manage multiple dashboards
+- Customize dashboard layouts
+- Add and arrange widgets
+- Real-time data updates
+- Dashboard sharing and collaboration
+
+### Data Visualization
+- Interactive charts and graphs
+- Multiple chart types (line, bar, pie, area)
+- Real-time data updates
+- Customizable visualizations
+- Export capabilities
+
+### Analytics
+- Key performance indicators (KPIs)
+- Trend analysis
+- Data filtering and segmentation
+- Custom metrics
+- Historical data tracking
+
+### User Management
+- User authentication
+- Role-based access control
+- User permissions
+- Team management
+- Activity logging
+
+### Responsive Design
+- Mobile-friendly interface
+- Tablet optimization
+- Desktop experience
+- Touch-friendly controls
+- Adaptive layouts
+
+### Theme Support
+- Light theme
+- Dark theme
+- Theme persistence
+- Custom color schemes
+- Accessibility features
+
+## Documentation
+
+For detailed documentation, please refer to the [docs](./docs) folder:
+
+- [CHANGELOG](./docs/CHANGELOG.md) - Version history and updates
+- [PROJECT_SETUP](./docs/PROJECT_SETUP.md) - Detailed setup instructions
+- [STRUCTURE](./docs/STRUCTURE.md) - Project architecture and organization
+- [TECHNOLOGIES](./docs/TECHNOLOGIES.md) - Technology stack details
+- [FEATURES](./docs/FEATURES.md) - Detailed feature documentation
+- [USE_CASES](./docs/USE_CASES.md) - Common use cases and workflows
+- [DEPLOYMENT](./docs/DEPLOYMENT.md) - Deployment guides
+- [STYLES](./docs/STYLES.md) - Design guidelines and style system
+- [CODE_OF_CONDUCT](./docs/CODE_OF_CONDUCT.md) - Community guidelines
+- [CONTRIBUTING](./docs/CONTRIBUTING.md) - Contribution guidelines
+- [SECURITY](./docs/SECURITY.md) - Security policies
+- [ERD](./docs/ERD.md) - Database schema and relationships
+- [CONTRIBUTORS](./docs/CONTRIBUTORS.md) - Team and contributors
 
 ## Development
 
@@ -104,14 +160,30 @@ The project can be deployed to various platforms:
 - **Vercel** - Deploy with zero configuration
 - **Traditional Hosting** - Build and upload the `dist` folder
 
+For detailed deployment instructions, see [DEPLOYMENT.md](./docs/DEPLOYMENT.md)
+
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+We welcome contributions! Please read the [Contributing Guidelines](./docs/CONTRIBUTING.md) for details.
+
+## Security
+
+For security concerns, please refer to the [Security Policy](./docs/SECURITY.md).
 
 ## License
 
-This project is owned by Dashboard Hub. All rights reserved.
+This project is owned by We3DS. All rights reserved.
 
 ## Support
 
-For help and inquiries, please contact the development team.
+For help and inquiries, please contact:
+
+- **Website:** [https://we3ds.com/](https://we3ds.com/)
+- **GitHub Issues:** [Dashboard Hub Issues](https://github.com/Mostafa-SAID7/Dashboard-hub/issues)
+- **Development Team:** [Mostafa SAID](https://github.com/Mostafa-SAID7)
+
+---
+
+**Built with ❤️ by We3DS**
+
+Dashboard Hub - Empowering Data-Driven Decisions
